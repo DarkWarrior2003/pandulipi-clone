@@ -35,9 +35,11 @@ nav ul li{
 nav a {
   color: #fff;
 }
-nav a:hover {
+nav a:hover,
+nav a.active{
   color: #0d64e8;
 }
+
 .logo {
   flex: 1;
 }

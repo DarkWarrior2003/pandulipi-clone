@@ -25,7 +25,7 @@
           <a href="#"><i class="fa-solid fa-bars"></i></a>
         </div>
         <ul class="menu">
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#">Events Gallery</a></li>
           <li><a href="#">Blog Page</a></li>
@@ -81,11 +81,17 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
-                praesentium corporis cumque <span id="dots" style="color:black ; font-size: 25px;">...</span><span class="more" id="more" style="color:black ;">dignissimos quibusdam soluta
-                  obcaecati culpa deserunt quidem possimus! Quis, ipsa.</span>
+                praesentium corporis cumque
+                <span id="dots" style="color: black; font-size: 25px">...</span
+                ><span class="more" id="more" style="color: black"
+                  >dignissimos quibusdam soluta obcaecati culpa deserunt quidem
+                  possimus! Quis, ipsa.</span
+                >
               </p>
               <br />
-              <button class="btn" id="myBtn" onclick="myFunction()">Read More</button>
+              <button class="btn" id="myBtn" onclick="myFunction()">
+                Read More
+              </button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -94,11 +100,17 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
-                praesentium corporis cumque <span id="dots1" style="color:black ; font-size: 25px;">...</span><span class="more" id="more1" style="color:black ;">dignissimos quibusdam soluta
-                  obcaecati culpa deserunt quidem possimus! Quis, ipsa.</span>
+                praesentium corporis cumque
+                <span id="dots1" style="color: black; font-size: 25px">...</span
+                ><span class="more" id="more1" style="color: black"
+                  >dignissimos quibusdam soluta obcaecati culpa deserunt quidem
+                  possimus! Quis, ipsa.</span
+                >
               </p>
               <br />
-              <button class="btn" id="myBtn1" onclick="myFunction1()">Read More</button>
+              <button class="btn" id="myBtn1" onclick="myFunction1()">
+                Read More
+              </button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -107,11 +119,17 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
-                praesentium corporis cumque <span id="dots2" style="color:black ; font-size: 25px;">...</span><span class="more" id="more2" style="color:black ;">dignissimos quibusdam soluta
-                  obcaecati culpa deserunt quidem possimus! Quis, ipsa.</span>
+                praesentium corporis cumque
+                <span id="dots2" style="color: black; font-size: 25px">...</span
+                ><span class="more" id="more2" style="color: black"
+                  >dignissimos quibusdam soluta obcaecati culpa deserunt quidem
+                  possimus! Quis, ipsa.</span
+                >
               </p>
               <br />
-              <button class="btn" id="myBtn2" onclick="myFunction2()">Read More</button>
+              <button class="btn" id="myBtn2" onclick="myFunction2()">
+                Read More
+              </button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -120,11 +138,17 @@
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Aspernatur quae ut, aperiam inventore, beatae a debitis, nam
-                praesentium corporis cumque <span id="dots3" style="color:black ; font-size: 25px;">...</span><span class="more" id="more3" style="color:black ;">dignissimos quibusdam soluta
-                  obcaecati culpa deserunt quidem possimus! Quis, ipsa.</span>
+                praesentium corporis cumque
+                <span id="dots3" style="color: black; font-size: 25px">...</span
+                ><span class="more" id="more3" style="color: black"
+                  >dignissimos quibusdam soluta obcaecati culpa deserunt quidem
+                  possimus! Quis, ipsa.</span
+                >
               </p>
               <br />
-              <button class="btn" id="myBtn3" onclick="myFunction3()">Read More</button>
+              <button class="btn" id="myBtn3" onclick="myFunction3()">
+                Read More
+              </button>
             </div>
           </div>
         </div>
@@ -154,43 +178,44 @@
       </div>
     </section>
     <script src="assets/main.js"></script>
+    <script src="assets/swipper.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
       var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    loop: true,
-    grabCursor: true,
-    keyboard: {
-      enabled: true,
-    },
-    breakpoints: {
-      1800: {
-        slidesPerView: 3,
+        slidesPerView: 1,
+        loop: true,
+        grabCursor: true,
+        keyboard: {
+          enabled: true,
+        },
+        breakpoints: {
+          1200: {
+            slidesPerView: 3,
 
-        spaceBetween: 90,
-      },
-      1024: {
-        slidesPerView: 2,
-        spaceBetween: 20,
-      },
-      660: {
-        slidesPerView: 2,
-        spaceBetween: 25,
-      },
-    },
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+            spaceBetween: 80,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          660: {
+            slidesPerView: 2,
+            spaceBetween: 25,
+          },
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
