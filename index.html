@@ -178,7 +178,6 @@
       </div>
     </section>
     <script src="assets/main.js"></script>
-    <script src="assets/swipper.css"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
@@ -216,6 +215,19 @@
           clickable: true,
         },
       });
+    </script>
+    <script>
+      $(function () {
+    $(".toggle").on("click", function () {
+      if ($(".menu").hasClass("active")) {
+        $(".menu").removeClass("active");
+        $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+      } else {
+        $(".menu").addClass("active");
+        $(this).find("a").html("<i class='fa-solid fa-xmark'></i>");
+      }
+    });
+  });
     </script>
   </body>
 </html>
